@@ -39,7 +39,6 @@ Tweaked the web scraper github repo (above) to scrape 1000 job postings from gla
 After scraping the data, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
 
 * Parsed numeric data out of salary
-* Made columns for employer provided salary and hourly wages
 * Removed rows without salary
 * Parsed rating out of company text
 * Made a new column for company state
@@ -49,7 +48,6 @@ After scraping the data, I needed to clean it up so that it was usable for our m
    * Python
    * R
    * Excel
-   * AWS
    * Spark
    * Column for simplified job title and Seniority
    * Column for description length
@@ -62,10 +60,10 @@ First, I transformed the categorical variables into dummy variables. I also spli
 I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
 
 I tried three different models:
-
    * **Multiple Linear Regression** – Baseline for the model
    * **Lasso Regression** – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
    * **Random Forest** – Again, with the sparsity associated with the data, I thought that this would be a good fit.
+
 ## Model performance
 The Random Forest model far outperformed the other approaches on the test and validation sets.
 
