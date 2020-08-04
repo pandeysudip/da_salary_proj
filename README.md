@@ -1,8 +1,8 @@
 # Data Science Salary Estimator: Project Overview
 
-  * Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their    income when they get a job.
+  * Created a tool that estimates data science salaries (MAE ~ $ 13K) to help data scientists negotiate their income when they get a job.
   * Scraped over 200 job descriptions from glassdoor using python and selenium
-  * Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark.
+  * Engineered features from the text of each job description to quantify the value companies put on python, excel, R, and spark.
   * Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.
   * Built a client facing API using flask
   
@@ -10,9 +10,10 @@
   Python Version: 3.7
   Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle
   For Web Framework Requirements: pip install -r requirements.txt
-  Scraper Github: https://github.com/arapfaik/scraping-glassdoor-selenium
-  Scraper Article: https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-   3d0915c6d905
-  Flask Productionization: https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
+  
+  Scraper Github: [https://github.com/arapfaik/scraping-glassdoor-selenium]
+  Scraper Article: (https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905)
+  Flask Productionization: (https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2)
 
 ## Web Scraping
 Tweaked the web scraper github repo (above) to scrape 1000 job postings from glassdoor.com. With each job, we got the following:
